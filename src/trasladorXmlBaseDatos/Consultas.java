@@ -101,7 +101,6 @@ public class Consultas {
 			universidadesProfesor.add(x.universidad);
 		}
 		Set<String> set = new HashSet<>(universidadesProfesor);
-        List<String> listWithoutDuplicates = new ArrayList<>(set);
         System.out.println("Profesor: " + p.getNombre() + " " + p.getApellido1() + " " + p.getApellido2() );
 		System.out.println("Universidades donde ha dado clase:"+ set.size());
 		System.out.println("------------------------");
@@ -109,5 +108,16 @@ public class Consultas {
             System.out.println(elemento);
         }
 	}
-
+	
+	public void profesorUniversidad() {
+		List<String> universidades = new ArrayList<>();
+		for (Curso x : cursos.values()) {
+			universidades.add(x.universidad);
+		}
+		Set<String> set = new HashSet<>(universidades);
+		System.out.println("------------------------");
+        for (String elemento : set) {
+            System.out.println(elemento);         
+        }		
+	}
 }

@@ -18,7 +18,8 @@ public class TrasladorXmlBaseDatos {
 		Consultas consulta = new Consultas();
 		consulta.rellenar();
 		//consulta.cursoProfesor("Pablo");
-		consulta.cursoProfesorUniversidad("Pablo");
+		//consulta.cursoProfesorUniversidad("Pablo");
+		consulta.profesorUniversidad();
 	}			
 
 }
